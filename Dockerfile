@@ -13,6 +13,10 @@ RUN apt-get -y update && \
 
 RUN git clone --depth 1 --single-branch -b init https://github.com/rrueedi/isa-py.git /isa
 RUN cp /isa/*.py /usr/local/bin/
+
+ADD runTest1.sh /usr/local/bin/runTest1.sh
+RUN chmod +x /usr/local/bin/runTest1.sh
+
 #RUN chmod a+rx \
 #	/usr/local/bin/isa.py \
 #	/usr/local/bin/isa.wrapper.py
