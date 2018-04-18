@@ -4,13 +4,13 @@
        <container type="docker">container-registry.phenomenal-h2020.eu/phnmnl/iterative-signature-algorithm</container>
      </requirements>
      <command>
-       <![CDATA[isa.wrapper.py -i /data/ts.csv -o /data/modules.csv]]>
+       <![CDATA[isa.wrapper.py -i "$data" -o "$modules"]]>
      </command>
      <inputs>
          <param name="data" type="data" format="csv" label="Data Matrix" help="Data matrix in which to seek modules."/>
      </inputs>
      <outputs>
-         <data name="modules" format="csv" from_work_dir="modules.csv" label="modules"/>
+         <data name="modules" format="csv" from_work_dir="modules.csv" label="ISA Modules"/>
      </outputs>
      <help>
 -----------

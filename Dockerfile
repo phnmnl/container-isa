@@ -14,6 +14,8 @@ RUN apt-get -y update && \
 RUN git clone --depth 1 --single-branch -b init https://github.com/rrueedi/isa-py.git /isa
 RUN cp /isa/*.py /usr/local/bin/
 
+WORKDIR /isa
+
 ADD runTest1.sh /usr/local/bin/runTest1.sh
 RUN chmod +x /usr/local/bin/runTest1.sh
 
