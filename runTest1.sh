@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # test data was downloaded as part of code repo
-isa.wrapper.py -i /isa/ts/ts.csv -o /isa/ts/oo.csv
+isawrp.py -i /isa/ts/ts.csv -o /isa/ts/oo.csv
 
 if ! [ -e "/isa/ts/oo.csv" ]; then
 	echo ""
