@@ -11,7 +11,7 @@ RUN apt-get -y update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-RUN echo "1."
+RUN echo "1.."
 RUN git clone --depth 1 --single-branch -b init https://github.com/rrueedi/isa-py.git /isa
 RUN cp /isa/*.py /usr/local/bin/
 
