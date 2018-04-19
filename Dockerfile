@@ -11,6 +11,7 @@ RUN apt-get -y update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
+RUN echo "1"
 RUN git clone --depth 1 --single-branch -b init https://github.com/rrueedi/isa-py.git /isa
 RUN cp /isa/*.py /usr/local/bin/
 
@@ -21,7 +22,7 @@ RUN chmod +x /usr/local/bin/runTest1.sh
 
 #RUN chmod a+rx \
 #	/usr/local/bin/isa.py \
-#	/usr/local/bin/isa.wrapper.py
+#	/usr/local/bin/isawrp.py
 
-ENTRYPOINT ["isa.wrapper.py"]
+ENTRYPOINT ["isawrp.py"]
 
