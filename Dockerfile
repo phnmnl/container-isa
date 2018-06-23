@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL software="Iterative Signature Algorithm [ISA]"
@@ -6,7 +6,7 @@ LABEL description="Iterative Signature Algorithm [ISA]"
 LABEL website="https://www2.unil.ch/cbg/index.php?title=ISA"
 LABEL base.image="ubuntu:xenial"
 LABEL software.version="0.0.2"
-LABEL version="0.0.2"
+LABEL version="0.0.3"
 LABEL software="iterative-signature-algorithm"
 
 RUN apt-get -y update && \
