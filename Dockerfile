@@ -1,13 +1,15 @@
 FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
-LABEL software="Iterative Signature Algorithm [ISA]"
+LABEL software="iterative-signature-algorithm"
 LABEL description="Iterative Signature Algorithm [ISA]"
 LABEL website="https://www2.unil.ch/cbg/index.php?title=ISA"
-LABEL base.image="ubuntu:xenial"
+LABEL documentation="https://www2.unil.ch/cbg/index.php?title=ISA"
+LABEL license="https://www2.unil.ch/cbg/index.php?title=ISA"
+LABEL base.image="ubuntu:16.04"
 LABEL software.version="0.0.2"
-LABEL version="0.0.3"
-LABEL software="iterative-signature-algorithm"
+LABEL version="0.0.4"
+LABEL tags="Biclustering"
 
 RUN apt-get -y update && \
 	apt-get install -y python3-numpy python3-scipy python3-pandas git && \
