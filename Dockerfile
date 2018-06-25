@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL software="iterative-signature-algorithm"
-LABEL description="Iterative Signature Algorithm [ISA]"
+LABEL description="Iterative Signature Algorithm [ISA], python3"
 LABEL website="https://www2.unil.ch/cbg/index.php?title=ISA"
 LABEL documentation="https://www2.unil.ch/cbg/index.php?title=ISA"
 LABEL license="https://www2.unil.ch/cbg/index.php?title=ISA"
