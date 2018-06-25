@@ -8,7 +8,7 @@ LABEL documentation="https://www2.unil.ch/cbg/index.php?title=ISA"
 LABEL license="https://www2.unil.ch/cbg/index.php?title=ISA"
 LABEL base.image="ubuntu:16.04"
 LABEL software.version="0.0.2"
-LABEL version="0.0.9"
+LABEL version="0.0.11"
 LABEL tags="Biclustering"
 
 RUN apt-get -y update && \
@@ -17,7 +17,7 @@ RUN apt-get -y update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-RUN git clone -b ini/20180625T1645 https://github.com/rrueedi/isa-py.git /isa
+RUN git clone -b ini/20180625T1745 https://github.com/rrueedi/isa-py.git /isa
 RUN cp /isa/*.py /usr/local/bin/
 
 WORKDIR /isa
