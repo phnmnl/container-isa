@@ -21,8 +21,8 @@ The iterative signature algorithm finds modules (or biclusters) in a data matrix
 - NMR
 
 ## Tool Authors
-- Sven Bergmann(http://www.unil.ch/cbg) (University of Lausanne)
-- Rico Rueedi (University of Lausanne)
+- [Sven Bergmann](http://www.unil.ch/cbg) (University of Lausanne)
+- [Rico Rueedi](https://github.com/rrueedi) (University of Lausanne)
 
 ## Container Contributors
 - [Rico Rueedi](https://github.com/rrueedi) (University of Lausanne)
